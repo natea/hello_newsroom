@@ -1,10 +1,10 @@
 <VirtualHost *:80>
     ServerName hello_newsroom.beta.tribapps.com
-    ServerAlias ec2-184-73-1-9.compute-1.amazonaws.com
+    ServerAlias ec2-50-16-164-129.compute-1.amazonaws.com
 
     WSGIScriptAlias / /home/newsapps/sites/hello_newsroom/repository/hello_newsroom/configs/staging/staging.wsgi
     
-    Redirect permanent /favicon.ico http://your-bucket-name.s3.amazonaws.com/hello_newsroom/site_media/favicon.ico
+    Redirect permanent /favicon.ico http://nate-geodjango.s3.amazonaws.com/hello_newsroom/site_media/favicon.ico
     
     Alias /robots.txt /home/newsapps/sites/hello_newsroom/repository/hello_newsroom/assets/robots.txt
  
